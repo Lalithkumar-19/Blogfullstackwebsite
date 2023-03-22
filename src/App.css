@@ -1,0 +1,198 @@
+body {
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    padding: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    background-color: #111;
+    color: white;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    height: 50px;
+}
+
+.header>h3 {
+    font-size: small;
+}
+
+.header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header a.logo {
+    font-weight: bold;
+}
+
+.header nav {
+    display: flex;
+    gap: 15px;
+}
+
+div.post {
+    display: grid;
+    grid-template-columns: 0.7fr 1.2fr;
+    gap: 20px;
+    border: 1px solid black;
+    margin-top: 70px;
+}
+
+@media screen and (min-width:500px) {
+    div.post {
+        grid-template-columns: .9fr 1.1fr;
+    }
+}
+
+div .image {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+div.image img {
+    width: 100%;
+    height: 100%;
+}
+
+div.texts {
+    width: 100%;
+    height: 100%;
+    background-color: seashell;
+}
+
+div.texts>h2 {
+    font-size: 20px;
+}
+
+div.texts p {
+    font-size: 15px;
+}
+
+.post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login,
+.register,
+.post {
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login>h2,
+.register>h2,
+.post>h2 {
+    text-align: center;
+    text-decoration: none;
+}
+
+.login>input,
+.register>input {
+    width: 100%;
+    height: 30px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid grey;
+}
+
+.login>input,
+.register>input:focus {
+    border-bottom: 1px solid blue;
+}
+
+.login>button,
+.register>button {
+    width: 100%;
+    height: 30px;
+    margin-top: 12px;
+    background-color: #111;
+    border: 0;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.post>input {
+    margin-bottom: 14px;
+}
+
+.post_page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+button {
+    background-color: #111;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.post_page>.image {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+    height: 500px;
+}
+
+.post_page>.image>img {
+    width: 100%;
+    height: 100%;
+}
+
+.post_page>.content {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.post_page>h1,
+span {
+    text-align: center;
+}
+
+.post_page>div>p {
+    line-height: 40px;
+}
+
+.edit {
+    color: white;
+    width: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100px;
+    background-color: #111;
+    border-radius: 8px;
+}
